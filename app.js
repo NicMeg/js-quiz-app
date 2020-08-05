@@ -19,5 +19,8 @@ form.addEventListener("submit", (e) => {
     }
   });
 
-  console.log(score);
+  // show score on page
+  document.getElementById("hidden").classList.remove('d-none');
+  document.getElementById("percentage").innerHTML = score + "%"; 
+
 });
